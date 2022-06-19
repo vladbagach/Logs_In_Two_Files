@@ -40,7 +40,7 @@ public class SingularServiceImpl {
             Set<Singular> logs = new LinkedHashSet<>();
             Set<Singular> finalLogs = logs;
             logs = stream
-                     .map(t -> new Singular(t.substring(4,16), (parseStringToZonedDataType((Long.parseLong(t.substring(16, 28))), NameFileConstants.FINISH))))
+                     .map(t -> new Singular(t.substring(4,16), (parseStringToZonedDataType((Long.parseLong(t.substring(16, 28))), NameFileConstants.START))))
                      .filter(finalLogs::add)
                      .collect(Collectors.toCollection(LinkedHashSet::new));
                 return logs;

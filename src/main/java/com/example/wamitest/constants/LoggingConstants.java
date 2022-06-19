@@ -2,8 +2,7 @@ package com.example.wamitest.constants;
 
 public enum LoggingConstants {
     LOG_DEBUG_EMPTY_PATTERN("Method was called."),
-    LOG_DEBUG_ONE_ARG_PATTERN("Method was called with argument: '{}'."),
-    LOG_DEBUG_TWO_ARG_PATTERN("Method was called with argument(s): LogFile: '{}', id: '{}'.");
+    LOG_DEBUG_ONE_ARG_PATTERN("Method was called with argument: '{}'.");
 
     private final String message;
 
